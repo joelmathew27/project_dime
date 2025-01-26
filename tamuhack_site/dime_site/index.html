@@ -18,14 +18,37 @@
       <section> 
         <ol>
           <li>
-            <p id="person">Person</p><p id="score">Score</p>
+            <p id="person0">Person</p><p id="score0">Score</p>
             <script src="output.js"></script>
-            <script src="app.js"></script>
+          </li>
+          <li>
+            <p id="person1">Person</p><p id="score1">Score</p>
+            <script src="output.js"></script>
+          </li>
+          <li>
+            <p id="person2">Person</p><p id="score2">Score</p>
+            <script src="output.js"></script>
           </li>
         </ol>
       </section>
     </div> 
   </body>
+
+  <script>
+    function displayData(num) {
+      let _data = data[num];
+
+      personElem = document.getElementById("person" + num);
+      scoreElem = document.getElementById("score" + num);
+
+      personElem.innerHTML = _data["person"];
+      scoreElem.innerHTML = _data["score"];
+    }
+
+    for (let i = 0; i < 3; i++) {
+      displayData(i);
+    }
+  </script>
 
 </html>
 

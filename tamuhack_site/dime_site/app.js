@@ -64,13 +64,13 @@
 //   console.log(`Example app listening on port ${port}`)
 // })
 
-document.addEventListener('DOMContentLoaded', () => {
-  const data = window.data;
-  const person = document.getElementById('person');
-  const score = document.getElementById('score');
-  person.textContent = data.person;
-  score.textContent = data.score;
-});
+// // document.addEventListener('DOMContentLoaded', () => {
+// //   const data = window.data;
+// //   const person = document.getElementById('person');
+// //   const score = document.getElementById('score');
+// //   person.textContent = data.person;
+// //   score.textContent = data.score;
+// // });
 
 
 
