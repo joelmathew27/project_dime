@@ -1,20 +1,23 @@
 const data = [
     { person: "Pranav", score: 21 },
     { person: "Joel", score: 3 },
-    { person: "Ian", score: 400 }
+    { person: "Ian", score: 400 },
+    { person: "Pranav", score: 20 },
+    { person: "Joel", score: 31 },
+    { person: "Ian", score: 401 }
   ];
   
-    apiKey = ;
-    apiUrl = ;
+    // apiKey = ;
+    // apiUrl = ;
 
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(products => {
-            console.log(products);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+    // fetch(apiUrl)
+    //     .then(response => response.json())
+    //     .then(products => {
+    //         console.log(products);
+    //     })
+    //     .catch(error => {
+    //         console.error('Error:', error);
+    //     });
 
   function updateLeaderboard() {
     const leaderboard = document.getElementById("leaderboard");
