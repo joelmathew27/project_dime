@@ -54,6 +54,7 @@ offset_right = -368.0
 offset_bottom = -169.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "Profile"
 
 [node name="BudgetButton" type="Button" parent="."]
@@ -70,6 +71,7 @@ offset_right = -34.0
 offset_bottom = -170.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "Budget"
 
 [node name="ProgressButton" type="Button" parent="."]
@@ -86,6 +88,7 @@ offset_right = 232.0
 offset_bottom = -163.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "Progress"
 
 [node name="SettingsButton" type="Button" parent="."]
@@ -102,6 +105,7 @@ offset_right = 501.0
 offset_bottom = -162.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 40
 text = "Settings"
 
 [connection signal="pressed" from="ProfileButton" to="." method="_on_profile_button_pressed"]
