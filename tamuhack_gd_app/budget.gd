@@ -1,9 +1,9 @@
 extends Control
 
-var savepath = "res://input_text.save"
+var savepath = "res://budget_save.save"
 # Define the variable to store the text
 var input_text = ""
-var saved_text = ""
+var saved_budget = []
 
 func _ready() -> void:
 	update_label()
@@ -17,14 +17,12 @@ func _on_line_edit_text_changed(new_text):
 	
 func _on_save_button_pressed() -> void:
 	save()
-	load_save()
-	var label = $VBoxContainer/SavedText;
-	label.text = saved_text
+	update_label()
 	
 func update_label():
 	load_save()
 	var label = $VBoxContainer/SavedText;
-	label.text = saved_text
+	label.text = saved_budget
 
 func save():
 	var file = FileAccess.open(savepath, FileAccess.WRITE)
@@ -33,6 +31,6 @@ func save():
 func load_save():
 	if FileAccess.file_exists(savepath):
 		var file = FileAccess.open(savepath, FileAccess.READ)
-		saved_text = file.get_var()
+		saved_budget = file.get_var()
 	else:
-		saved_text = ""
+		saved_budget = []
