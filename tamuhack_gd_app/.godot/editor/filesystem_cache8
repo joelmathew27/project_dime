@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1737873253
+budget.gd::GDScript::-1::1737872539::0::1::::<>Control<>::
+budget.tscn::PackedScene::100667438787007181::1737873148::0::1::::<><>::res://budget.gd<>uid://b6lw0wyefsveq::::res://assets/bg1.png
+icon.svg::CompressedTexture2D::267357526625089857::1737873217::1737873253::0::::<><>::
+main.gd::GDScript::-1::1737868929::0::1::::<>Control<>::
+main.tscn::PackedScene::3047821907412081389::1737873148::0::1::::<><>::res://main.gd<>uid://b6lw0wyefsveq::::res://assets/bg1.png<>uid://f5dunow6mihc::::res://assets/PixelifySans-VariableFont_wght.ttf
+profile.gd::GDScript::-1::1737868929::0::1::::<>Control<>::
+profile.tscn::PackedScene::6894949405662127633::1737873148::0::1::::<><>::res://profile.gd<>uid://b6lw0wyefsveq::::res://assets/bg1.png
+progress.tscn::PackedScene::1857086573010695147::1737873148::0::1::::<><>::res://profile.gd<>uid://b6lw0wyefsveq::::res://assets/bg1.png
+settings.tscn::PackedScene::5067141388141973265::1737873220::0::1::::<><>::res://profile.gd<>uid://b6lw0wyefsveq::::res://assets/bg1.png
+::res://assets/::1737872207
+bg1.png::CompressedTexture2D::4586364603233411532::1737871720::1737871731::1::::<><>::
+PixelifySans-VariableFont_wght.ttf::FontFile::413094123140653088::1737872203::1737872207::1::::<><>::
