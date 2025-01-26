@@ -13,3 +13,8 @@ config_version=5
 config/name="TAMUHack"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[gui]
+
+theme/custom_font="res://assets/PixelifySans-VariableFont_wght.ttf"
