@@ -1,0 +1,10 @@
+#head {
+    text-align: center;
+}
+
+#rankings {
+    background-color: burlywood;
+    margin: auto;
+    padding: 20px;
+    max-width: 500px;
+}
