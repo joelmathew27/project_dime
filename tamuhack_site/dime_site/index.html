@@ -1,54 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <!-- IMPORT STUFF AND SET TITLE HERE-->
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Dime</title>
-    <link rel="stylesheet" href="app.css" />
-  </head> 
-
-  <body>
-    <div id="head">
-      <h1>Dime Leaderboard</h1> 
-      <p>Standings for Month Day, Year</p>
-    </div>
-    <div id="rankings">
-      <section> 
-        <ol>
-          <li>
-            <p id="person0">Person</p><p id="score0">Score</p>
-            <script src="output.js"></script>
-          </li>
-          <li>
-            <p id="person1">Person</p><p id="score1">Score</p>
-            <script src="output.js"></script>
-          </li>
-          <li>
-            <p id="person2">Person</p><p id="score2">Score</p>
-            <script src="output.js"></script>
-          </li>
-        </ol>
-      </section>
-    </div> 
-  </body>
-
-  <script>
-    function displayData(num) {
-      let _data = data[num];
-
-      personElem = document.getElementById("person" + num);
-      scoreElem = document.getElementById("score" + num);
-
-      personElem.innerHTML = _data["person"];
-      scoreElem.innerHTML = _data["score"];
-    }
-
-    for (let i = 0; i < 3; i++) {
-      displayData(i);
-    }
-  </script>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dime Leaderboard</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header id="head">
+    <h1>Dime Leaderboard</h1>
+    <p>Standings for Month Day, Year</p>
+  </header>
+  <main id="rankings">
+    <ol id="leaderboard">
+      <!-- Dynamically populated -->
+    </ol>
+  </main>
+  <script src="output.js"></script>
+</body>
 </html>
-
