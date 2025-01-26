@@ -46,10 +46,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -429.0
-offset_top = -200.0
-offset_right = -368.0
-offset_bottom = -169.0
+offset_left = -498.5
+offset_top = -368.0
+offset_right = -298.5
+offset_bottom = -168.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_default_cursor_shape = 2
@@ -65,9 +65,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -234.0
-offset_top = -370.0
+offset_top = -368.0
 offset_right = -34.0
-offset_bottom = -170.0
+offset_bottom = -168.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_default_cursor_shape = 2
@@ -83,9 +83,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = 32.0
-offset_top = -363.0
+offset_top = -368.0
 offset_right = 232.0
-offset_bottom = -163.0
+offset_bottom = -168.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_default_cursor_shape = 2
@@ -101,20 +101,21 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = 301.0
-offset_top = -362.0
+offset_top = -368.0
 offset_right = 501.0
-offset_bottom = -162.0
+offset_bottom = -168.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 40
-text = "Settings"
+text = "Help
+Tips & Tricks"
 
-[connection signal="pressed" from="ProfileButton" to="." method="_on_profile_button_pressed"]
 [connection signal="pressed" from="ProfileButton" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="BudgetButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ProfileButton" to="." method="_on_profile_button_pressed"]
 [connection signal="pressed" from="BudgetButton" to="." method="_on_budget_button_pressed"]
-[connection signal="pressed" from="ProgressButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="BudgetButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ProgressButton" to="." method="_on_progress_button_pressed"]
+[connection signal="pressed" from="ProgressButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SettingsButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
