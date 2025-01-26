@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_hklj7")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = -1186.0
 offset_top = -687.0
 offset_right = 3657.0
@@ -48,26 +49,32 @@ layout_mode = 2
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -576.0
-offset_top = 287.0
+offset_top = 188.0
 offset_right = 576.0
-offset_bottom = 421.0
+offset_bottom = 646.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
-alignment = 1
+theme_override_constants/separation = 5
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="AddToBudgetLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0.168903, 0.434043, 0.171051, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
 text = "ADD TO BUDGET"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
-theme_override_constants/separation = 9
+theme_override_constants/separation = 10
 alignment = 1
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 35
+placeholder_text = "Type and Amount"
 
 [node name="SaveButton" type="Button" parent="VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
@@ -76,11 +83,42 @@ mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 20
 text = "SAVE"
 
-[node name="SavedText" type="Label" parent="VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 10
+
+[node name="SavedText" type="Label" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(1042, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
+
+[node name="ClearButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 20
+text = "CLEAR"
+
+[node name="ItemList" type="ItemList" parent="VBoxContainer"]
+custom_minimum_size = Vector2(250, 60)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 20
+max_text_lines = 2
+auto_height = true
+item_count = 2
+max_columns = 2
+fixed_column_width = 100
+item_0/text = "Type"
+item_1/text = "Amount"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_button_pressed"]
 [connection signal="text_changed" from="VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/ClearButton" to="." method="_on_clear_button_pressed"]
