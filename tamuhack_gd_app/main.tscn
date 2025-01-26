@@ -13,9 +13,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_k8f7q")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(587, 326.5)
-scale = Vector2(10.1719, 6.10156)
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -1186.0
+offset_top = -687.0
+offset_right = 3657.0
+offset_bottom = 2401.0
 texture = ExtResource("2_2wgoc")
 
 [node name="Label" type="Label" parent="."]
@@ -107,8 +110,8 @@ mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 40
 text = "Settings"
 
-[connection signal="pressed" from="ProfileButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ProfileButton" to="." method="_on_profile_button_pressed"]
+[connection signal="pressed" from="ProfileButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="BudgetButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="BudgetButton" to="." method="_on_budget_button_pressed"]
 [connection signal="pressed" from="ProgressButton" to="." method="_on_button_pressed"]

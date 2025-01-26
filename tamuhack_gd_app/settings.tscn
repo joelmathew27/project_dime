@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cegtcwtialgr6"]
+[gd_scene load_steps=3 format=3 uid="uid://cegtcwtialgr6"]
 
 [ext_resource type="Script" path="res://profile.gd" id="1_fqw2t"]
+[ext_resource type="Texture2D" uid="uid://b6lw0wyefsveq" path="res://assets/bg1.png" id="2_oc14v"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -10,6 +11,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fqw2t")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -1186.0
+offset_top = -687.0
+offset_right = 3657.0
+offset_bottom = 2401.0
+texture = ExtResource("2_oc14v")
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
