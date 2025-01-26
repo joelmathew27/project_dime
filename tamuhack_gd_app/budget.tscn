@@ -14,14 +14,11 @@ script = ExtResource("1_hklj7")
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.478
-anchor_top = 1.0
-anchor_right = 0.478
-anchor_bottom = 1.0
-offset_left = 0.343994
-offset_top = -648.0
-offset_right = 51.344
-offset_bottom = -625.0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.0
+offset_right = 26.0
+offset_bottom = 23.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.243137, 0.611765, 0.247059, 1)
 theme_override_font_sizes/font_size = 130
@@ -39,14 +36,25 @@ text = "BACK"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
-offset_top = 286.5
-offset_right = 1152.0
-offset_bottom = 361.5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_top = 287.0
+offset_right = 576.0
+offset_bottom = 421.0
 size_flags_horizontal = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "ADD TO BUDGET"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
+theme_override_constants/separation = 9
+alignment = 1
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -55,6 +63,7 @@ size_flags_horizontal = 3
 [node name="SaveButton" type="Button" parent="VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 20
 text = "SAVE"
 
