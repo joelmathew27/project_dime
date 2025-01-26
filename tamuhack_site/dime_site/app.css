@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+p {
+    display: inline;
+}
+
 #rankings {
     background-color: burlywood;
     margin: auto;
