@@ -4,6 +4,18 @@ const data = [
     { person: "Ian", score: 400 }
   ];
   
+    apiKey = ;
+    apiUrl = ;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(products => {
+            console.log(products);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
   function updateLeaderboard() {
     const leaderboard = document.getElementById("leaderboard");
     leaderboard.innerHTML = "";
